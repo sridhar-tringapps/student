@@ -22,7 +22,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  after_create :welcome_msg
+  after_commit :welcome_msg
   def welcome_msg
     ActionJob.set(wait: 3.seconds).perform_later(User.last)
   end
