@@ -13897,3 +13897,147 @@ Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 387
   [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "admin@admin.in"], ["id", 1], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/jobs" for ::1 at 2021-04-22 16:41:10 +0530
+  [1m[35m (36.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/jobs"):
+  
+Started GET "/" for ::1 at 2021-04-22 16:41:12 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 29.0ms | Allocations: 737)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 18.0ms | Allocations: 784)
+  Rendered layout layouts/application.html.erb (Duration: 1545.0ms | Allocations: 63953)
+Completed 200 OK in 1622ms (Views: 1554.7ms | ActiveRecord: 0.0ms | Allocations: 70280)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:41:14 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3346)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 3747)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-22 16:41:18 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.9ms | Allocations: 221)
+  Rendered devise/shared/_links.html.erb (Duration: 9.9ms | Allocations: 537)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 179.6ms | Allocations: 8232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 192.1ms | Allocations: 11449)
+Completed 200 OK in 341ms (Views: 195.6ms | ActiveRecord: 121.7ms | Allocations: 18961)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-22 16:41:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 233)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.8ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 5175)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 6674)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-22 16:41:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4480)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 5133)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-22 16:41:22 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 152)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1016)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 4253)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4958)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-04-22 16:41:23 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (158.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 811ms (ActiveRecord: 161.5ms | Allocations: 5697)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:41:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:9
+  Rendered shared/_header.html.erb (Duration: 9.1ms | Allocations: 1304)
+  Rendered layouts/_alerts.html.erb (Duration: 23.0ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 4757)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 1.7ms | Allocations: 5215)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-04-22 16:41:26 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/user.rb:27:in `welcome_msg'
+[ActiveJob] Enqueued ActionJob (Job ID: a1711716-e858-481d-8d6f-2ccbdb1891a8) to Sidekiq(default) at 2021-04-22 11:11:29 UTC with arguments: #<GlobalID:0x0000564537073f50 @uri=#<URI::GID gid://open/User/1>>
+Redirected to http://localhost:3000/
+Completed 302 Found in 146ms (ActiveRecord: 5.5ms | Allocations: 5947)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:41:26 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 188)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3408)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:41:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3301)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 3751)
+
+
+Started GET "/" for ::1 at 2021-04-22 16:42:00 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3316)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 3711)
+
+
