@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-
+    @user = current_user
   end
 
   def destroy
@@ -20,6 +20,7 @@ class UsersController < ApplicationController
       user.destroy
       redirect_to users_path, :notice => "user deleted"
   end
+
   def update
       @user = User.find(params[:id])
       authorize @user
