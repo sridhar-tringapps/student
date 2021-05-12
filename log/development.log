@@ -15907,3 +15907,42 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4783)
 
 
+Started GET "/" for ::1 at 2021-05-05 12:35:29 +0530
+Started GET "/" for ::1 at 2021-05-05 12:35:29 +0530
+  [1m[35m (50.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.1ms | Allocations: 728)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 185.4ms | Allocations: 11224)
+  Rendered devise/shared/_links.html.erb (Duration: 10.6ms | Allocations: 811)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 174.8ms | Allocations: 11150)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 14.2ms | Allocations: 886)
+  Rendered shared/_header.html.erb (Duration: 13.7ms | Allocations: 667)
+  Rendered layout layouts/application.html.erb (Duration: 453.6ms | Allocations: 24121)
+Completed 200 OK in 722ms (Views: 562.9ms | ActiveRecord: 115.6ms | Allocations: 37498)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 438.7ms | Allocations: 23886)
+Completed 200 OK in 717ms (Views: 540.6ms | ActiveRecord: 75.4ms | Allocations: 37106)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-05-05 12:35:37 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 9.2ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 151)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 38.0ms | Allocations: 2289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 5543)
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 7328)
+
+
+  [1m[36mUser Load (77.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
