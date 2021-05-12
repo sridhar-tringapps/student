@@ -15907,6 +15907,7 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4783)
 
 
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2021-05-05 12:35:29 +0530
 Started GET "/" for ::1 at 2021-05-05 12:35:29 +0530
   [1m[35m (50.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -16466,3 +16467,5 @@ puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
 puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
 puma (5.2.2) lib/puma/server.rb:431:in `process_client'
 puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+=======
+>>>>>>> parent of b0c63962... Updated README
